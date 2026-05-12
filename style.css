@@ -62,13 +62,17 @@ body {
 
 /* === WATERMARK === */
 .watermark-layer {
-  position: fixed; top: 50%; left: 50%;
+  position: fixed; 
+  top: 50%; 
+  left: 50%;
   transform: translate(-50%, -50%);
-  width: 32vw; height: 32vw;
+  width: 40vw; 
+  height: 40vw;
   background: url('logo.png') center/contain no-repeat;
-  opacity: 0.12;
-  filter: brightness(1.0) contrast(1.1);
-  pointer-events: none; z-index: -1;
+  opacity: 0.08;
+  filter: brightness(1.2) contrast(1.2);
+  pointer-events: none; 
+  z-index: 9999;
   user-select: none;
 }
 
