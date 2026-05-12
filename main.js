@@ -169,7 +169,9 @@ function initSmoothScroll() {
 // ── CONTACT FORM (EmailJS Integration) ────────────────────────────────────────
 function initContactForm() {
   // Initialize EmailJS with Public Key
-  emailjs.init("7LawkLDsDb6qn7DAP");
+  if (typeof emailjs !== 'undefined') {
+    emailjs.init("7LawkLDsDb6qn7DAP");
+  }
 
   const form = document.getElementById("contactForm");
   const successEl = document.getElementById("formSuccess");
@@ -193,6 +195,9 @@ function initContactForm() {
     };
 
     try {
+      if (typeof emailjs === 'undefined') {
+        throw new Error("Email service is currently unavailable.");
+      }
       await emailjs.send("service_7ve6xhq", "template_ij0osqr", templateParams);
 
       // ✅ SUCCESS — Show success UI
