@@ -61,8 +61,7 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800&display=swap');
 
 /* === WATERMARK === */
-body::before {
-  content: '';
+.watermark-layer {
   position: fixed; top: 50%; left: 50%;
   transform: translate(-50%, -50%);
   width: 32vw; height: 32vw;
@@ -638,7 +637,7 @@ body::before {
 .footer-bottom span { color: var(--primary); font-weight: 600; }
 
 /* === AOS ANIMATIONS === */
-[data-aos] { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; }
+[data-aos] { opacity: 1; transform: translateY(0); transition: opacity 0.6s ease, transform 0.6s ease; }
 [data-aos].aos-animate { opacity: 1; transform: translateY(0); }
 
 /* === RESPONSIVE === */
