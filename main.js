@@ -138,7 +138,7 @@ function initCounters() {
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.5 });
+  }, { threshold: 0.1 });
   document.querySelectorAll(".stat-number[data-target]").forEach(el => observer.observe(el));
 }
 
@@ -152,7 +152,7 @@ function initAOS() {
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.1 });
+  }, { threshold: 0.05 });
   document.querySelectorAll("[data-aos]").forEach(el => observer.observe(el));
 }
 
@@ -253,14 +253,15 @@ function initCardTilt() {
 
 // ── INIT ──────────────────────────────────────────────────────────────────────
 document.addEventListener("DOMContentLoaded", () => {
-  renderServices();
-  initNavbar();
-  initHamburger();
-  initSmoothScroll();
-  initContactForm();
+  try { renderServices(); } catch (e) { console.error("Error rendering services:", e); }
+  try { initNavbar(); } catch (e) { console.error("Error initializing navbar:", e); }
+  try { initHamburger(); } catch (e) { console.error("Error initializing hamburger:", e); }
+  try { initSmoothScroll(); } catch (e) { console.error("Error initializing smooth scroll:", e); }
+  try { initContactForm(); } catch (e) { console.error("Error initializing contact form:", e); }
+  
   requestAnimationFrame(() => {
-    initAOS();
-    initCounters();
-    setTimeout(initCardTilt, 300);
+    try { initAOS(); } catch (e) { console.error("Error initializing AOS:", e); }
+    try { initCounters(); } catch (e) { console.error("Error initializing counters:", e); }
+    try { setTimeout(initCardTilt, 300); } catch (e) { console.error("Error initializing card tilt:", e); }
   });
 });
