@@ -130,26 +130,16 @@ body {
   display: flex; align-items: center; justify-content: space-between;
 }
 .nav-logo {
-  display: flex; align-items: center; gap: 0.75rem; text-decoration: none;
+  display: flex; 
+  align-items: center; 
+  text-decoration: none;
 }
 .main-logo {
   height: 85px;
   width: auto;
   object-fit: contain;
   transition: var(--transition);
-  filter: brightness(0.85) contrast(1.2);
-  margin-right: -5px;
-}
-.logo-box {
-  width: 44px; height: 44px; background: #070e24; border-radius: 10px;
-  display: flex; align-items: center; justify-content: center;
-  border: 1px solid var(--border-hover);
-  box-shadow: var(--glow);
-}
-.logo-symbol { color: var(--primary); font-size: 22px; font-weight: 800; }
-.logo-text {
-  font-family: var(--font-display); font-weight: 800;
-  font-size: 1.6rem; color: #ffffff; letter-spacing: -0.02em;
+  filter: brightness(1.1) contrast(1.1);
 }
 .nav-links { display: flex; gap: 2.5rem; list-style: none; }
 .nav-link {
