@@ -114,14 +114,14 @@ body {
 /* === NAVBAR === */
 .navbar {
   position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
-  height: 90px; display: flex; align-items: center;
+  height: 110px; display: flex; align-items: center;
   transition: var(--transition);
 }
 .navbar.scrolled {
   background: rgba(5, 10, 31, 0.92);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  height: 75px;
+  height: 85px;
   border-bottom: 1px solid var(--border);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
 }
@@ -133,7 +133,7 @@ body {
   display: flex; align-items: center; gap: 0.75rem; text-decoration: none;
 }
 .main-logo {
-  height: 68px;
+  height: 85px;
   width: auto;
   object-fit: contain;
   transition: var(--transition);
@@ -149,7 +149,7 @@ body {
 .logo-symbol { color: var(--primary); font-size: 22px; font-weight: 800; }
 .logo-text {
   font-family: var(--font-display); font-weight: 800;
-  font-size: 1.4rem; color: #ffffff; letter-spacing: -0.02em;
+  font-size: 1.6rem; color: #ffffff; letter-spacing: -0.02em;
 }
 .nav-links { display: flex; gap: 2.5rem; list-style: none; }
 .nav-link {
