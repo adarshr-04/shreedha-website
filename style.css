@@ -133,12 +133,13 @@ body {
   display: flex; align-items: center; gap: 0.75rem; text-decoration: none;
 }
 .main-logo {
-  height: 60px;
+  height: 75px;
   width: auto;
   object-fit: contain;
   transition: var(--transition);
-  filter: brightness(0.6) contrast(1.2);
-  transform: scale(1.25);
+  filter: brightness(0.75) contrast(1.4);
+  transform: scale(1.4);
+  margin-right: -10px;
 }
 .logo-box {
   width: 44px; height: 44px; background: #070e24; border-radius: 10px;
@@ -149,7 +150,7 @@ body {
 .logo-symbol { color: var(--primary); font-size: 22px; font-weight: 800; }
 .logo-text {
   font-family: var(--font-display); font-weight: 800;
-  font-size: 1.4rem; color: var(--text); letter-spacing: -0.02em;
+  font-size: 1.4rem; color: #ffffff; letter-spacing: -0.02em;
 }
 .nav-links { display: flex; gap: 2.5rem; list-style: none; }
 .nav-link {
