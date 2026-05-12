@@ -701,10 +701,17 @@ body {
   .services-grid { grid-template-columns: 1fr; }
   
   .contact-form-wrapper { padding: 1.5rem; }
+  
+  /* Mobile specific watermark */
+  .watermark-layer { width: 65vw; height: 65vw; opacity: 0.07; }
 }
 
 @media (max-width: 480px) {
-  .hero-title { font-size: 2.5rem; }
+  .hero-title { font-size: 2.1rem; line-height: 1.1; margin-bottom: 1rem; }
+  .hero-subtitle { font-size: 0.95rem; }
   .btn { width: 100%; justify-content: center; }
-  .hero-actions { flex-direction: column; width: 100%; }
+  .hero-actions { flex-direction: column; width: 100%; gap: 1rem; }
+  .watermark-layer { width: 80vw; height: 80vw; opacity: 0.05; }
+  .logo-text { font-size: 1.1rem; }
+  .main-logo { height: 32px; }
 }
