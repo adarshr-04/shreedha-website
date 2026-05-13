@@ -30,8 +30,10 @@ const TECH_SERVICES = [
 ];
 
 const COMPLIANCE_SERVICES = [
-  { cat: "GOVERNMENT", icon: ICONS.compliance, title: "Statutory Compliance", desc: "HR - Statutory Liaison & Compliance, FSSAI, and GST registrations for seamless legal operations.", img: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800" },
-  { cat: "FINANCE", icon: ICONS.audit, title: "Audit & Taxation", desc: "Direct & Indirect TAX services, professional auditing, and strategic financial consultations.", img: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800" },
+  { cat: "GOVERNMENT", icon: ICONS.compliance, title: "Statutory Compliance", desc: "HR - Statutory Liaison & Compliance, Labor Laws, and periodic regulatory filings.", img: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800" },
+  { cat: "FINANCE", icon: ICONS.audit, title: "Audit Services", desc: "Professional auditing and strategic financial health checks to optimize your business.", img: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800" },
+  { cat: "TAXATION", icon: ICONS.tax, title: "GST & TAX Services", desc: "Direct & Indirect TAX management, GST registration, and monthly filing management.", img: "https://images.unsplash.com/photo-1554224155-1696413575b3?auto=format&fit=crop&q=80&w=800" },
+  { cat: "REGULATORY", icon: ICONS.compliance, title: "Establishment Compliance", desc: "FSSAI registration, Shops & Establishment licenses, and trade permit management.", img: "https://images.unsplash.com/photo-1423592707957-3b212afa6733?auto=format&fit=crop&q=80&w=800" },
   { cat: "BUSINESS", icon: ICONS.billing, title: "Business Solutions", desc: "Intelligent billing solutions and administrative management tailored for enterprise growth.", img: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800" },
   { cat: "RESOURCES", icon: ICONS.payroll, title: "Payroll & HR", desc: "Accurate payroll processing and management of employee-related statutory benefits.", img: "https://images.unsplash.com/photo-1454165833767-02a698d58745?auto=format&fit=crop&q=80&w=800" }
 ];
