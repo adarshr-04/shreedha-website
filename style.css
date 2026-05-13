@@ -119,7 +119,7 @@ body {
 /* === NAVBAR === */
 .navbar {
   position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
-  height: 125px; display: flex; align-items: center;
+  height: 150px; display: flex; align-items: center;
   transition: var(--transition);
 }
 .navbar.scrolled {
@@ -140,7 +140,7 @@ body {
   text-decoration: none;
 }
 .main-logo {
-  height: 90px;
+  height: 135px;
   width: auto;
   object-fit: contain;
   transition: var(--transition);
