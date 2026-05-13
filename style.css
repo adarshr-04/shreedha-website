@@ -73,7 +73,7 @@ body {
   transform: translate(-50%, -50%);
   width: 40vw; 
   height: 40vw;
-  background: url('logo.png?v=2') center/contain no-repeat;
+  background: url('logo.png?v=10') center/contain no-repeat;
   opacity: 0.05;
   filter: brightness(1.2);
   pointer-events: none; 
@@ -138,11 +138,13 @@ body {
   display: flex; 
   align-items: center; 
   text-decoration: none;
+  background: transparent !important;
 }
 .main-logo {
   height: 120px;
   width: auto;
   object-fit: contain;
+  background: transparent !important;
   transition: var(--transition);
   filter: drop-shadow(0 0 15px rgba(139, 29, 29, 0.5));
 }
@@ -753,13 +755,25 @@ body {
   .section-title { font-size: 2rem; }
   
   .services-grid, .projects-grid { 
-    grid-template-columns: 1fr; 
-    gap: 1.25rem; 
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 1.5rem !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+  }
+  
+  .service-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
   }
   
   .projects-grid { margin-top: 2rem; }
-  .contact-info-item { padding: 1rem; }
-  .contact-form-wrapper { padding: 1.25rem; }
+  .contact-info-item { padding: 1rem; width: 100%; }
+  .contact-form-wrapper { padding: 1.25rem; width: 100%; }
   
   .watermark-layer { width: 70vw; height: 70vw; opacity: 0.06; }
 }
