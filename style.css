@@ -752,7 +752,13 @@ body {
   .section-header { margin-bottom: 2rem; }
   .section-title { font-size: 2rem; }
   
-  .services-grid { grid-template-columns: 1fr; gap: 1.25rem; }
+  .services-grid, .projects-grid { 
+    grid-template-columns: 1fr; 
+    gap: 1.25rem; 
+  }
+  
+  .projects-grid { margin-top: 2rem; }
+  .contact-info-item { padding: 1rem; }
   .contact-form-wrapper { padding: 1.25rem; }
   
   .watermark-layer { width: 70vw; height: 70vw; opacity: 0.06; }
