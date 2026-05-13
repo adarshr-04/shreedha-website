@@ -73,7 +73,7 @@ body {
   transform: translate(-50%, -50%);
   width: 40vw; 
   height: 40vw;
-  background: url('logo.png') center/contain no-repeat;
+  background: url('logo.png?v=2') center/contain no-repeat;
   opacity: 0.05;
   filter: brightness(1.2);
   pointer-events: none; 
