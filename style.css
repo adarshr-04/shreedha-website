@@ -140,11 +140,14 @@ body {
   text-decoration: none;
 }
 .main-logo {
-  height: 135px;
+  height: 120px;
   width: auto;
   object-fit: contain;
   transition: var(--transition);
   filter: drop-shadow(0 0 15px rgba(139, 29, 29, 0.5));
+}
+.navbar.scrolled .main-logo {
+  height: 80px;
 }
 .nav-links { display: flex; gap: 2.5rem; list-style: none; }
 .nav-link {
